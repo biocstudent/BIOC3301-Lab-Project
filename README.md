@@ -1,5 +1,7 @@
 BIOC3301 Soil Microbiome Lab Project
 
+This repository contains all of the batch files which were used to carry out data analysis of the paired end sequence reads obtained following Illumina MiSeq sequencing of 16S rRNA V4 regions present in microbial gDNA extracted from soil samples obtained from several greenspaces in central London. All analyses were carried out on Cirrus, a high performance computer cluster which is based at the University of Edinburgh.
+
 Raw Sequence Data Analysis: 
 
 1. Join paired end reads - joined_paired_ends
