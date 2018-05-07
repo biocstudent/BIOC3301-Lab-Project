@@ -17,7 +17,7 @@ source activate qiime1
 #setting temporary directory
 export TMPDIR=~/qiime_tmp
 
-#compare Phosphorous Unweighted UniFrac Anosim
+#compare Phosphorous weighted UniFrac Anosim
 echo "comparing sample P using Anosim and WUF"
 time compare_categories.py -i ~/2018_02_smb/SILVAcdout/bdiv_even627/weighted_unifrac_dm.txt -m ~/2018_02_smb/map.tsv -c SamplePhosphorus --method anosim -o anosim_W_P -n 99
 
