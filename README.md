@@ -20,7 +20,7 @@ Statistical Analysis:
    - Phosphurus - compare_categories_weighted_phosphorus
    - Potassium - compare_categories_weighted_potassiun
 2. Summarise taxa table - summarize_taxa 
-3. Group Significance for:
+3. Analysis of group significance for:
    - pH - group_significance_pH
    - Nitrogen - group_significance_nitrogen
    - Phosphorus - group_significance_phosphorus
