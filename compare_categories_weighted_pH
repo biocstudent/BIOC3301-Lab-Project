@@ -1,0 +1,25 @@
+#!/bin/bash --login
+#PBS -l walltime=01:00:00
+#PBS -l select=1:ncpus=2
+#PBS -N 2017_cr_nojoin_no_golay_serial
+#PBS -A d411-training
+
+cd $PBS_O_WORKDIR
+
+#Load Modules and qiime
+module load miniconda/python2
+
+#loading virtual environment
+echo "activating virtual environment"
+
+source activate qiime1
+
+#setting temporary directory
+export TMPDIR=~/qiime_tmp
+
+#compare Phosphorous Unweighted UniFrac Anosim
+echo "comparing sample P using Anosim and UUF"
+time compare_categories.py -i ~/2018_02_smb/SILVAcdout/bdiv_even627/weighted_unifrac_dm.txt -m ~/2018_02_smb/map.tsv -c SamplePh --method anosim -o anosim_W_pH -n 99
+
+#deactivating virtual environment
+source deactivate
