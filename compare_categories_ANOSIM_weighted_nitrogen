@@ -17,7 +17,7 @@ source activate qiime1
 #setting temporary directory
 export TMPDIR=~/qiime_tmp
 
-#compare Nitrogen Weighted UniFrac Anosim
+#compare Nitrogen weighted UniFrac Anosim
 echo "comparing sample N using Anosim and WUF"
 time compare_categories.py -i ~/2018_02_smb/SILVAcdout/bdiv_even627/weighted_unifrac_dm.txt -m ~/2018_02_smb/map.tsv -c SampleNitrogen --method anosim -o anosim_W_N -n 99
 
