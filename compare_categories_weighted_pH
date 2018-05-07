@@ -17,8 +17,8 @@ source activate qiime1
 #setting temporary directory
 export TMPDIR=~/qiime_tmp
 
-#compare Phosphorous Unweighted UniFrac Anosim
-echo "comparing sample P using Anosim and UUF"
+#comparing pH weighted UniFrac Anosim
+echo "comparing sample Ph using Anosim and WUF"
 time compare_categories.py -i ~/2018_02_smb/SILVAcdout/bdiv_even627/weighted_unifrac_dm.txt -m ~/2018_02_smb/map.tsv -c SamplePh --method anosim -o anosim_W_pH -n 99
 
 #deactivating virtual environment
